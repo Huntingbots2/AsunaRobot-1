@@ -28,7 +28,6 @@ currencyconverter==0.17.26
 googletrans==4.0.0rc1
 google-trans-new
 speedtest-cli==2.1.3
-coffeehouse
 regex==2024.5.15
 bleach==6.1.0
 wikipedia==1.4.0
@@ -49,7 +48,7 @@ pyrogram==2.0.106
 git+https://github.com/Sorrybabe/downloader
 yt_dlp
 youtube_search
-youtube_search_python
+youtube_search_python==1.4.6
 lyrics_extractor
 cloudscraper==1.2.71
 dateparser
