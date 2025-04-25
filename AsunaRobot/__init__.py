@@ -6,7 +6,6 @@ import asyncio
 import time
 import spamwatch
 import telegram.ext as tg
-from redis import StrictRedis
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 from telethon import TelegramClient
@@ -78,7 +77,6 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     DB_URI = os.environ.get("DATABASE_URL")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    REDIS_URL = os.environ.get("REDIS_URL", None)
     ARQ_API = os.environ.get("ARQ_API", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     LOAD = os.environ.get("LOAD", "").split()
@@ -155,7 +153,6 @@ else:
     API_HASH = Config.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
-    REDIS_URL = Config.REDIS_URL
     MONGO_DB_URI = Config.MONGO_DB_URI
     ARQ_API = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
