@@ -8,7 +8,7 @@ from telegram.ext import Filters, MessageHandler
 
 from AsunaRobot import dispatcher
 from AsunaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from AsunaRobot.modules.sql.afk_sql.py import start_afk, end_afk, is_user_afk, afk_reason
+from AsunaRobot.modules.sql.afk_sql import start_afk, end_afk, is_user_afk, afk_reason
 # from AsunaRobot import REDIS
 from AsunaRobot.modules.users import get_user_id
 
